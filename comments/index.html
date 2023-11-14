@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: undefined,
   isToc: false,
-  postUpdate: '2023-11-14 14:53:17',
+  postUpdate: '2023-11-14 14:59:36',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -381,7 +381,7 @@ queueMicrotask(() => {
   const initWaline = () => {
     const waline = Waline.init(Object.assign({
       el: '#waline-wrap',
-      serverURL: 'https://walink.aicgo.top/',
+      serverURL: 'https://waline.aicgo.top/',
       pageview: false,
       dark: 'html[data-theme="dark"]',
       path: window.location.pathname,
@@ -448,7 +448,7 @@ queueMicrotask(() => {
 
   const getComment = async () => {
     try {
-      const res = await fetch('https://walink.aicgo.top/api/comment?type=recent&count=6', { method: 'GET' })
+      const res = await fetch('https://waline.aicgo.top/api/comment?type=recent&count=6', { method: 'GET' })
       const result = await res.json()
       const walineArray = result.data.map(e => {
         return {
