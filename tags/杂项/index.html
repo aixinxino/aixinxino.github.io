@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: undefined,
   isToc: false,
-  postUpdate: '2023-11-14 00:39:47',
+  postUpdate: '2023-11-14 14:53:17',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -382,7 +382,7 @@ queueMicrotask(() => {
 
   const getComment = async () => {
     try {
-      const res = await fetch('https://hexo-five-tau.vercel.app/api/comment?type=recent&count=6', { method: 'GET' })
+      const res = await fetch('https://walink.aicgo.top/api/comment?type=recent&count=6', { method: 'GET' })
       const result = await res.json()
       const walineArray = result.data.map(e => {
         return {
